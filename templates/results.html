@@ -1,0 +1,15 @@
+{% extends "base.html" %} {% block title %}Results Page{% endblock %} {% block
+content %}
+<h3>Results</h3>
+{% for name in names %}
+<div>
+  <h3>{{ name }}</h3>
+  <p>{{ titles }}</p>
+  <p>{{ phone_numbers }}</p>
+  <p>{{ specialties }}</p>
+  <p>{{ insurances }}</p>
+  <p>{{ qualifications }}</p>
+  <p>{{ website }}</p>
+  <p>{{ bios }}</p>
+</div>
+{% endfor %} {% endblock %}
